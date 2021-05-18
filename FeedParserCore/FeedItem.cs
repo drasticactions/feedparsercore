@@ -21,6 +21,6 @@ namespace FeedParserCore
 		/// <summary>
 		/// Published/created date for the feed item.
 		/// </summary>
-		public DateTime PublishDate { get; set; } = DateTime.MinValue;
+		public string PublishDate { get; set; } = DateTime.MinValue.ToString();
 	}
 }

@@ -22,7 +22,7 @@ namespace FeedParserCore
                 {
                     Content = item.GetElementValue<string>("description"),
                     Link = item.GetElementValue<string>("link"),
-                    PublishDate = item.GetElementValue<DateTime>("pubDate"),
+                    PublishDate = item.GetElementValue<string>("pubDate"),
                     Title = item.GetElementValue<string>("title")
                 }
             },
@@ -31,7 +31,7 @@ namespace FeedParserCore
                 {
                     Content = item.GetElementValue<string>("description"),
                     Link = item.GetElementValue<string>("link"),
-                    PublishDate = item.GetElementValue<DateTime>("date"),
+                    PublishDate = item.GetElementValue<string>("date"),
                     Title = item.GetElementValue<string>("title")
                 }
             },
@@ -40,7 +40,7 @@ namespace FeedParserCore
                 {
                     Content = item.GetElementValue<string>("content"),
                     Link = item.GetElementValue<string>("link", "href"),
-                    PublishDate = item.GetElementValue<DateTime>("updated"),
+                    PublishDate = item.GetElementValue<string>("updated"),
                     Title = item.GetElementValue<string>("title")
                 }
             }
